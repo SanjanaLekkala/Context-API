@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { CounterProvider } from './context/Counter';
 import { DarkThemeProvider } from './context/DarkTheme';
+import { CartProvider } from './context/Cart';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +13,9 @@ root.render(
     
     <CounterProvider>
     <DarkThemeProvider>
+      <CartProvider>
     <App />
+    </CartProvider>
     </DarkThemeProvider>
     </CounterProvider>
     
